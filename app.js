@@ -1,17 +1,20 @@
 const express = require("express");
 const path = require("path");
+
 const bodyParser = require("body-parser");
+
+const sequelize = require("./utils/database");
 
 const app = express();
 app.set("view engine", "ejs");
-app.set("views", "views")
+app.set("views", "views");
 
 const postRoutes = require("./routes/post");
 const adminRoutes = require("./routes/admin");
 
 // middleware
 app.use(express.static(path.join(__dirname, "public")));
-app.use(bodyParser.urlencoded({extended : false}))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/post", (request, response, next) => {
   console.log("I am post middleware");
@@ -31,4 +34,10 @@ app.use("/admin", (request, response, next) => {
 app.use(postRoutes);
 app.use("/admin", adminRoutes);
 
-app.listen(8000);
+sequelize
+  .sync()
+  .then((result) => {
+    console.log(result);
+    app.listen(8000);
+  })
+  .catch((err) => console.log(err));
