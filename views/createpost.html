@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Create Post</title>
+  </head>
+  <body>
+    <section class="mx-auto">
+      <a href="/">Go back home</a>
+      <h1 class="title">Add a new post here!</h1>
+      <form action="/admin" method="post">
+        <div>
+          <label for="title">Enter Title</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+        <div>
+          <label for="photo">Photo Url</label>
+          <input type="text" name="photo" id="photo" required />
+        </div>
+        <div>
+          <label for="description">Enter Description</label>
+          <input type="text" name="description" id="description" required />
+        </div>
+        <button>Add Post</button>
+      </form>
+    </section>
+  </body>
+</html>

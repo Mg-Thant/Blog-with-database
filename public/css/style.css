@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage {
+    margin: 50px auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: red;
+}
+
+a {
+    display: block;
+    margin: 10px 8px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    width: fit-content;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+input, textarea {
+    font-size: 18px;
+    padding: 4px 6px;
+    width: 100%;
+}
+
+button {
+    margin: 10px 0;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mx-auto {
+    width: 50%;
+    margin: 75px auto;
+}
+
+.post-box {
+    border: 1px solid black;
+    padding: 10px 13px;
+    margin: 20px;
+}
+
+.post-title {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.post-des {
+    text-align: center;
+}
+
+.no-data {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.no-data p {
+    font-size: 19px;
+}
+
+.no-data a {
+    margin: 5px auto !important;
+}
+
+.btn-center {
+    margin: 8px auto;
+}
+
+.details {
+    width: 100%;
+}
+
+.details h1 {
+    margin: 9px;
+}
+
+.image {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.details p {
+    margin: 9px;
+    padding: 8px 12px;
+    font-size: 18px;
+}
