@@ -42,7 +42,7 @@ input, textarea {
     width: 100%;
 }
 
-button {
+button, .edit-btn {
     margin: 10px 0;
     background-color: #000;
     color: #fff;
@@ -51,6 +51,7 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .mx-auto {
